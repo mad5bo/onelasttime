@@ -27,7 +27,7 @@
   } ],
   "template_input_params": [
     {
-      "name": "openstack_image_name",
+      "name": "openstack_image_id",
       "label": "Openstack Image Id",
       "description": "The ID of the image to be used for deploy operations.",
       "type": "string",
@@ -40,7 +40,7 @@
       "immutable_after_create": false
     },
     {
-      "name": "openstack_flavor_name",
+      "name": "openstack_flavor_id",
       "label": "Openstack Flavor Id",
       "description": "The ID of the flavor to be used for deploy operations.",
       "type": "string",
@@ -132,7 +132,7 @@
     }
   ],
   "template_output_params": [  {
-    "name": "PowerVC-VM-IP",
+    "name": "single-vm-ip",
     "label": "Single Vm Ip",
     "description": "Single Vm Ip",
     "secured": false,
