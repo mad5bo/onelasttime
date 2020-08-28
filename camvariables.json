@@ -65,45 +65,7 @@
       "immutable": false,
       "immutable_after_create": false
     },
-#    {
-#      "name": "image_id_username",
-#      "label": "Image Id Username",
-#      "description": "The username to SSH into image ID",
-#     "type": "string",
-#      "default": "",
-#      "validation": "",
-#      "required": true,
-#      "secured": false,
-#     "hidden": false,
-#      "immutable": false,
-#      "immutable_after_create": false
-#    },
-#    {
-#      "name": "image_id_password",
-#      "label": "Image Id Password",
-#      "description": "The password of the username to SSH into image ID",
-#      "type": "string",
-#     "default": "",
-#      "validation": "",
-#      "required": true,
-#      "secured": false,
-#      "hidden": false,
-#      "immutable": false,
-#      "immutable_after_create": false
-#    },
-#    {
-#      "name": "pool",
-#      "label": "Pool",
-#      "description": "Pool",
-#      "type": "string",
-#      "default": "VLAN354",
-#      "validation": "",
-#      "required": true,
-#      "secured": false,
-#      "hidden": false,
-#      "immutable": false,
-#      "immutable_after_create": false
- #   },
+
     {
       "name": "ibm_stack_name",
       "label": "Ibm Stack Name",
@@ -117,19 +79,7 @@
       "immutable": false,
       "immutable_after_create": false
     }
-#    {
-#      "name": "number_of_instances",
-#      "label": "Number Of Instances",
-#      "description": "Number Of Instances",
-#      "type": "string",
-#      "default": "",
-#      "validation": "",
-#     "required": true,
-#     "secured": false,
-#      "hidden": false,
-#      "immutable": false,
-#      "immutable_after_create": false
-#    }
+
   ],
   "template_output_params": [  {
     "name": "PowerVC-VM-IP",
