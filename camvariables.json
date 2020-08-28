@@ -1,0 +1,113 @@
+{
+  "output_datatype": "content_template_output",
+  "input_datatypes": [ ],
+  "input_namespaces": [ ],
+  "output_namespace": "",
+  "input_groups": [
+    {
+      "name": "cloud",
+      "label": "Cloud Input Variables"
+    },
+    {
+      "name": "virtualmachine",
+      "label": "Virtual Machine Input Variables"
+    },
+    {
+      "name": "ssh_keys",
+      "label": "SSH Keys"
+    },
+    {
+      "name": "environment",
+      "label": "Environment"
+    }
+  ],
+  "output_groups": [  {
+    "name": "content_template_output",
+    "label": "Outputs"
+  } ],
+  "template_input_params": [
+    {
+      "name": "openstack_image_name",
+      "label": "Openstack Image name",
+      "description": "The ID of the image to be used for deploy operations.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false,
+      "validation": ""
+    },
+    {
+      "name": "openstack_flavor_id",
+      "label": "Openstack Flavor Id",
+      "description": "The ID of the flavor to be used for deploy operations.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "openstack_network_name",
+      "label": "Openstack Network Name",
+      "description": "The name of the network to be used for deploy operations.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false,
+      "validation": ""
+    },
+    {
+      "name": "ibm_stack_name",
+      "label": "Ibm Stack Name",
+      "description": "Stack Name",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false,
+      "validation": ""
+    },
+    {
+      "name": "number_of_instances",
+      "label": "Number Of Instances",
+      "description": null,
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    }
+  ],
+  "template_output_params": [  {
+    "name": "single-vm-ip",
+    "label": "Single Vm Ip",
+    "description": "Single Vm Ip",
+    "group_name": "",
+    "secured": false,
+    "hidden": false,
+    "shortname": "",
+    "type": "string"
+  } ]
+}
