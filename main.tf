@@ -29,11 +29,11 @@ provider "openstack" {
   version  = "~> 0.3"
 }
 
-variable "number_of_instances" {}
+#variable "number_of_instances" {}
 
 resource "openstack_compute_instance_v2" "PowerVC-VM" {
-  count     = "${var.number_of_instances}"
-  name      = "${var.ibm_stack_name}${format("-vm-%02d", count.index+1)}"
+#  count     = "${var.number_of_instances}"
+#  name      = "${var.ibm_stack_name}${format("-vm-%02d", count.index+1)}"
   image_name  = "${var.openstack_image_name}"
   flavor_id = "${var.openstack_flavor_id}"   
 
