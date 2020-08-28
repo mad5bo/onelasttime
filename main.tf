@@ -33,9 +33,9 @@ provider "openstack" {
 
 resource "openstack_compute_instance_v2" "PowerVC-VM" {
 #  count     = "${var.number_of_instances}"
-#  name      = "${var.ibm_stack_name}${format("-vm-%02d", count.index+1)}"
+  name        =   "${var.ibm_stack_name}"
   image_name  = "${var.openstack_image_name}"
-  flavor_id = "${var.openstack_flavor_id}"   
+  flavor_id   = "${var.openstack_flavor_id}"   
 
   network {
     name = "${var.openstack_network_name}"
