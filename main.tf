@@ -1,8 +1,14 @@
+provider "openstack" {
+  insecure = true
+  version  = "~> 0.2"
+}
+
+
 variable "openstack_image_name" {
   description = "The ID of the image to be used for deploy operations."
 }
 
-variable "openstack_flavor_id" {
+variable "openstack_flavor_name" {
   description = "The ID of the flavor to be used for deploy operations."
 }
 
@@ -24,18 +30,15 @@ variable "ibm_stack_name" {
   description = "Stack Name"
 }
 
-provider "openstack" {
-  insecure = true
-  version  = "~> 0.3"
-}
+
 
 #variable "number_of_instances" {}
 
 resource "openstack_compute_instance_v2" "PowerVC-VM" {
 #  count     = "${var.number_of_instances}"
-  name        =   "${var.ibm_stack_name}"
+  name      = "${var.ibm_stack_name}"
   image_name  = "${var.openstack_image_name}"
-  flavor_id   = "${var.openstack_flavor_id}"   
+  flavor_id = "${var.openstack_flavor_name}"   
 
   network {
     name = "${var.openstack_network_name}"
@@ -65,7 +68,7 @@ resource "openstack_compute_instance_v2" "PowerVC-VM" {
 #depends_on = ["openstack_networking_router_interface_v2.terraform"]
 #}
 
-output "PowerVC-Vm-IP" {
+output "PowerVC-VM-IP" {
   value = "${openstack_compute_instance_v2.PowerVC-VM.*.network.0.fixed_ip_v4}"
  # value = "${openstack_compute_floatingip_v2.terraform.address}"
 }
