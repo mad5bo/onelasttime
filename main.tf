@@ -1,7 +1,4 @@
-provider "openstack" {
-  insecure = true
-  version  = "~> 0.3"
-}
+
 
 variable "openstack_image_name" {
   description = "The Name of the image to be used for deploy operations."
@@ -29,7 +26,10 @@ variable "image_id_username" {
  # description = "Stack Name"
 #}
 
-
+provider "openstack" {
+  insecure = true
+  version  = "~> 0.3"
+}
 
 #variable "number_of_instances" {}
 
