@@ -12,9 +12,9 @@ variable "openstack_network_name" {
   description = "The name of the network to be used for deploy operations."
 }
 
-variable "image_id_username" {
-  description = "The username to SSH into image ID"
-}
+#variable "image_id_username" {
+#  description = "The username to SSH into image ID"
+#}
 
 #variable "image_id_password" {
  # description = "The password of the username to SSH into image ID"
