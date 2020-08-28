@@ -1,8 +1,13 @@
-variable "openstack_image_id" {
-  description = "The ID of the image to be used for deploy operations."
+provider "openstack" {
+  insecure = true
+  version  = "~> 0.3"
 }
 
-variable "openstack_flavor_id" {
+variable "openstack_image_name" {
+  description = "The Name of the image to be used for deploy operations."
+}
+
+variable "openstack_flavor_name" {
   description = "The ID of the flavor to be used for deploy operations."
 }
 
@@ -14,28 +19,25 @@ variable "image_id_username" {
   description = "The username to SSH into image ID"
 }
 
-variable "image_id_password" {
-  description = "The password of the username to SSH into image ID"
-}
-variable "pool" {
-  default = "VLAN354"
-}
-variable "ibm_stack_name" {
-  description = "Stack Name"
-}
+#variable "image_id_password" {
+ # description = "The password of the username to SSH into image ID"
+#}
+#variable "pool" {
+ # default = "VLAN354"
+#}
+#variable "ibm_stack_name" {
+ # description = "Stack Name"
+#}
 
-provider "openstack" {
-  insecure = true
-  #version  = "~> 0.3"
-}
 
-variable "number_of_instances" {}
+
+#variable "number_of_instances" {}
 
 resource "openstack_compute_instance_v2" "single-vm" {
-  count     = "${var.number_of_instances}"
-  name      = "${var.ibm_stack_name}${format("-vm-%02d", count.index+1)}"
-  image_id  = "${var.openstack_image_id}"
-  flavor_id = "${var.openstack_flavor_id}"   
+ # count     = "${var.number_of_instances}"
+  name      = "${var.ibm_stack_name}"
+  image_name  = "${var.openstack_image_name}"
+  flavor_name = "${var.openstack_flavor_name}"   
 
   network {
     name = "${var.openstack_network_name}"
@@ -43,10 +45,10 @@ resource "openstack_compute_instance_v2" "single-vm" {
   }
 
   # Specify the ssh connection
-  connection {
-    user     = "${var.image_id_username}"
-    password = "${var.image_id_password}"
-    timeout  = "10m"
+#  connection {
+ #   user     = "${var.image_id_username}"
+  #  password = "${var.image_id_password}"
+   # timeout  = "10m"
   }
 }
 #resource "openstack_networking_router_v2" "terraform" {
