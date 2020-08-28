@@ -65,7 +65,7 @@ resource "openstack_compute_instance_v2" "PowerVC-VM" {
 #depends_on = ["openstack_networking_router_interface_v2.terraform"]
 #}
 
-output "single-vm-ip" {
+output "PowerVC-Vm-IP" {
   value = "${openstack_compute_instance_v2.PowerVC-VM.*.network.0.fixed_ip_v4}"
  # value = "${openstack_compute_floatingip_v2.terraform.address}"
 }
