@@ -67,7 +67,7 @@ resource "openstack_compute_instance_v2" "single-vm" {
 #depends_on = ["openstack_networking_router_interface_v2.terraform"]
 #}
 
-output "single-vm-ip" {
-  value = "${openstack_compute_instance_v2.single-vm.*.network.0.fixed_ip_v4}"
+  #output "single-vm-ip" {
+ # value = "${openstack_compute_instance_v2.single-vm.*.network.0.fixed_ip_v4}"
  # value = "${openstack_compute_floatingip_v2.terraform.address}"
 }
