@@ -49,8 +49,8 @@ resource "openstack_compute_instance_v2" "single-vm" {
  #   user     = "${var.image_id_username}"
   #  password = "${var.image_id_password}"
    # timeout  = "10m"
-  }
-}
+#  }
+#}
 #resource "openstack_networking_router_v2" "terraform" {
 #name = "terraform"
 #admin_state_up = "true"
