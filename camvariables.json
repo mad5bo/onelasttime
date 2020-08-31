@@ -54,8 +54,8 @@
     },
     {
       "name": "openstack_network_name",
-      "label": "Please insert the name of te network.",
-      "description": "Please insert the name of te network.",
+      "label": "Please insert the name of the network.",
+      "description": "Please insert the name of the network.",
       "type": "string",
       "default": "",
       "validation": "",
