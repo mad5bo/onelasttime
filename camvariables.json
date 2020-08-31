@@ -29,7 +29,7 @@
     {
       "name": "openstack_image_name",
       "label": "Openstack Image Id",
-      "description": "The ID of the image to be used for deploy operations.",
+      "description": "Please insert the name of the image of PowerVC",
       "type": "string",
       "default": "",
       "validation": "",
@@ -42,7 +42,7 @@
     {
       "name": "openstack_flavor_name",
       "label": "Openstack Flavor Id",
-      "description": "The ID of the flavor to be used for deploy operations.",
+      "description": "Please insert the Compute Template to deploy the virtual machine.",
       "type": "string",
       "default": "",
       "validation": "",
@@ -55,7 +55,7 @@
     {
       "name": "openstack_network_name",
       "label": "Openstack Network Name",
-      "description": "The name of the network to be used for deploy operations.",
+      "description": "Please insert the name of te network.",
       "type": "string",
       "default": "",
       "validation": "",
@@ -67,7 +67,7 @@
     },
 
     {
-      "name": "ibm_stack_name",
+      "name": "Name of the new Virtual Machine",
       "label": "Ibm Stack Name",
       "description": "Stack Name",
       "type": "string",
