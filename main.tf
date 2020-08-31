@@ -28,7 +28,7 @@ variable "ibm_stack_name" {
 
 provider "openstack" {
   insecure = true
-  version  = "~> 0.2"
+  version  = "~> 0.3"
 }
 
 #variable "number_of_instances" {}
