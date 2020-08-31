@@ -28,7 +28,7 @@
   "template_input_params": [
     {
       "name": "openstack_image_name",
-      "label": "Openstack Image Id",
+      "label": "Please insert the name of the image of PowerVC",
       "description": "Please insert the name of the image of PowerVC",
       "type": "string",
       "default": "",
@@ -41,7 +41,7 @@
     },
     {
       "name": "openstack_flavor_name",
-      "label": "Openstack Flavor Id",
+      "label": "Please insert the Compute Template to deploy the virtual machine.",
       "description": "Please insert the Compute Template to deploy the virtual machine.",
       "type": "string",
       "default": "",
@@ -54,7 +54,7 @@
     },
     {
       "name": "openstack_network_name",
-      "label": "Openstack Network Name",
+      "label": "Please insert the name of te network.",
       "description": "Please insert the name of te network.",
       "type": "string",
       "default": "",
@@ -67,9 +67,9 @@
     },
 
     {
-      "name": "Name of the new Virtual Machine",
-      "label": "Ibm Stack Name",
-      "description": "Stack Name",
+      "name": "ibm_stack_name",
+      "label": "Name of the new Virtual Machine",
+      "description": "Name of the new Virtual Machine",
       "type": "string",
       "default": "",
       "validation": "",
