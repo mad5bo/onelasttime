@@ -68,8 +68,8 @@
 
     {
       "name": "ibm_stack_name",
-      "label": "Name of the new Virtual Machine",
-      "description": "Name of the new Virtual Machine",
+      "label": "Please insert a new name for the Virtual Machine",
+      "description": "Please insert a new name for the Virtual Machine",
       "type": "string",
       "default": "",
       "validation": "",
