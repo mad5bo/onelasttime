@@ -22,9 +22,9 @@ variable "openstack_network_name" {
 #variable "pool" {
  # default = "VLAN354"
 #}
-#variable "ibm_stack_name" {
- # description = "Stack Name"
-#}
+variable "ibm_stack_name" {
+  description = "Stack Name"
+}
 
 provider "openstack" {
   insecure = true
