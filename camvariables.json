@@ -1,5 +1,30 @@
 {
-  
+  "output_datatype": "content_template_output",
+  "input_datatypes": [ ],
+  "input_namespaces": [ ],
+  "output_namespace": "",
+  "input_groups": [
+    {
+      "name": "cloud",
+      "label": "Cloud Input Variables"
+    },
+    {
+      "name": "virtualmachine",
+      "label": "Virtual Machine Input Variables"
+    },
+    {
+      "name": "ssh_keys",
+      "label": "SSH Keys"
+    },
+    {
+      "name": "environment",
+      "label": "Environment"
+    }
+  ],
+  "output_groups": [  {
+    "name": "content_template_output",
+    "label": "Outputs"
+  } ],
   "template_input_params": [
     {
       "name": "openstack_image_name",
@@ -56,5 +81,12 @@
     }
 
   ],
-  
+  "template_output_params": [  {
+    "name": "PowerVC-VM-IP",
+    "label": "Single Vm Ip",
+    "description": "Single Vm Ip",
+    "secured": false,
+    "hidden": false,
+    "shortname": ""
+  } ]
 }
