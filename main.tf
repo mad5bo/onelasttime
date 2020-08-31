@@ -28,7 +28,7 @@ variable "openstack_network_name" {
 
 provider "openstack" {
   insecure = true
-  version  = "~> 0.3"
+  version  = "~> 0.2"
 }
 
 #variable "number_of_instances" {}
