@@ -60,14 +60,6 @@
       "immutable": false,
       "immutable_after_create": false
     }
-
   ],
-  "template_output_params": [  {
-    "name": "PowerVC-VM-IP",
-    "label": "Single Vm Ip",
-    "description": "Single Vm Ip",
-    "secured": false,
-    "hidden": false,
-    "shortname": ""
-  } ]
+  "template_output_params": [ ]
 }
