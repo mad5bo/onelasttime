@@ -3,30 +3,8 @@
   "input_datatypes": [ ],
   "input_namespaces": [ ],
   "output_namespace": "",
-  "input_groups": [ 
-  {
-      "name": "cloud",
-      "label": "Cloud Input Variables"
-    },
-    {
-      "name": "virtualmachine",
-      "label": "Virtual Machine Input Variables"
-    },
-    {
-      "name": "ssh_keys",
-      "label": "SSH Keys"
-    },
-    {
-      "name": "environment",
-      "label": "Environment"
-    }
-  ],
-  "output_groups": [
-    {
-    "name": "content_template_output",
-    "label": "Outputs"
-    }
-    ],
+  "input_groups": [],
+  "output_groups": [],
   "template_input_params": [
     {
       "name": "openstack_image_name",
