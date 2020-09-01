@@ -28,5 +28,7 @@ variable "openstack_network_name" {
 variable "ibm_stack_name" {
   description = "Stack Name"
 }
-  
 
+output "New IP for LPAR" {
+  value = "${openstack_compute_instance_v2.PowerVC-LPAR.*.network.0.fixed_ip_v4}"
+ }
