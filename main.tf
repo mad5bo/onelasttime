@@ -26,7 +26,7 @@ variable "openstack_network_name" {
 }
 
 variable "ibm_stack_name" {
-  description = "Stack Name"
+  description = "Name of the new LPAR to deploy"
 }
 
 output "New IP for LPAR" {
