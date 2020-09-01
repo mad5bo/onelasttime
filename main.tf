@@ -28,4 +28,4 @@ variable "ibm_stack_name" {
   output "single-vm-ip" {
   value = "${openstack_compute_instance_v2.PowerVC-LPAR.*.network.0.fixed_ip_v4}"
    }
-}
+
