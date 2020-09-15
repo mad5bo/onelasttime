@@ -1,6 +1,6 @@
 provider "openstack" {
   insecure = true
-  version  = "~> 0.2"
+#  version  = "~> 0.2"
 }
 #Create an IBM i partition
 resource "openstack_compute_instance_v2" "PowerVC-LPAR" {
