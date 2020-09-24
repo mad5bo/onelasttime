@@ -29,6 +29,6 @@ variable "ibm_stack_name" {
   description = "Name of the new LPAR to deploy"
 }
 
-output "New IP for LPAR" {
+output "VM_IP_Address" {
   value = "${openstack_compute_instance_v2.PowerVC-LPAR.*.network.0.fixed_ip_v4}"
  }
